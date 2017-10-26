@@ -11,7 +11,6 @@ const fibonacci_memo = () => {
         }
         
         memo[n] = fibonacci(n - 1) + fibonacci(n - 2);
-        console.log(memo);
         return memo[n];
     };
 
