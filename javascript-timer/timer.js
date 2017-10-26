@@ -17,7 +17,7 @@ const timer = (startTimeInMilliseconds) => {
         // console.log(`typeof: ${ typeof endTime }`);
 
         return endTime - startTime;
-    }
+    };
 };
 
 // returns formatted time in minutes and seconds as a string
@@ -36,14 +36,15 @@ const formattedTime = (timeInMilliseconds) => {
 /* below is an example of how these can be used */
 /************************************************/
 const fib = (n) => {
-	if (n == 0) {
+	if (n === 0) {
 		return 0;
 	} else if (n <= 2) {
 		return 1;
 	}
 	return fib(n - 1) + fib(n - 2);
-}
+};
 
-const t = timer(Date.now());
-console.log(`fib(46): ${ fib(46) }`);
-console.log(`timeLapsed: ${ formattedTime( t(Date.now()) ) }`);
+// the following snippet is commented out to avoid execution on load
+// const t = timer(Date.now());
+// console.log(`fib(46): ${ fib(46) }`);
+// console.log(`timeLapsed: ${ formattedTime( t(Date.now()) ) }`);
